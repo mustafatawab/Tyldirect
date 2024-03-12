@@ -1,113 +1,296 @@
 import Image from "next/image";
+import background from '../../public/background.jpg'
+import { MdArrowRight } from "react-icons/md";
+import latopBlack from '../../public/download.jpeg'
+import { FaWindows, FaAndroid } from "react-icons/fa";
+
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+    <div className="">
+      <Image className="absolute top-0 -z-10 w-screen   bg-repeat" src={background} alt="" />
+      <main className="px-28 space-y-28">
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+        {/* Hero Section */}
+        <section className="flex justify-end items-center mt-20 px-20">
+          <div className="w-[600px] p-10 flex flex-col justify-center gap-5">
+            <p className="font-bold text-5xl text-start ">Offer speed and style with all in one tablet POS Pacakges</p>
+            <div className="flex gap-5">
+              <p className="px-5 py-3 border-2 rounded-lg">Get Your Offer</p>
+              <p className="px-5 py-3 border-t-2 border-b-2 border-red-700">Join Our 200+ Global Customers</p>
+            </div>
+          </div>
+
+        </section>
+
+
+        {/*  */}
+        <section className="px-10 flex flex-wrap gap-10 justify-between">
+          <div className="flex flex-col gap-5 lg:basis-1/4">
+            <h2 className="font-semibold text-xl">Easy Installation</h2>
+            <hr />
+            <p className="text-white/60">Goodbye to messy setup, simply plug in your tablet and start the day</p>
+
+          </div>
+
+
+          <div className="flex flex-col gap-5 lg:basis-1/4">
+            <h2 className="font-semibold text-xl">Easy Installation</h2>
+            <hr />
+            <p className="text-white/60">Goodbye to messy setup, simply plug in your tablet and start the day</p>
+
+          </div>
+
+
+          <div className="flex flex-col gap-5 lg:basis-1/4">
+            <h2 className="font-semibold text-xl">Easy Installation</h2>
+            <hr />
+            <p className="text-white/60">Goodbye to messy setup, simply plug in your tablet and start the day</p>
+
+          </div>
+        </section>
+
+        {/*  */}
+        <section className="flex justify-center items-center">
+          <div>
+            <Image src={latopBlack} alt="" />
+          </div>
+          <div className="space-y-3">
+            <h1 className="flex gap-3 font-bold text-4xl">
+              <span>  Tyledirect POS Tablet </span>
+              <FaWindows />
+              /
+              <FaAndroid />
+            </h1>
+            <p className="text-white/60">Portable kit ready for any challenge your business may face. The bundle includes :</p>
+
+            <ul className="space-y-1">
+              <li className="flex items-center gap-2">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/60">
+
+                  Tablet with android and apple options
+                </p>
+              </li>
+
+              <li className="flex items-center gap-2">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/60">
+
+                  Tablet with android and apple options
+                </p>
+              </li>
+
+
+              <li className="flex items-center gap-2">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/60">
+
+                  Tablet with android and apple options
+                </p>
+              </li>
+
+
+              <li className="flex items-center gap-2">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/60">
+
+                  Tablet with android and apple options
+                </p>
+              </li>
+            </ul>
+            <span className=" flex">
+              <p className="px-5 py-3 border-2 rounded-lg">Get Your Offer</p>
+              <p className="px-5 py-3">Contact Sales</p>
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          </div>
+        </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        {/* section of packages */}
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        <section className="my-10 flex justify-evenly">
+          <div className="rounded-lg p-10 bg-gradient-to-tr  from-black/90 via-gray-800 to-white/50"  >
+            <h3 className="text-2xl font-bold">Bundle 1</h3>
+            <p className="text-white/60">Al Essentails you needed to make a start </p>
+            <ul className="space-y-1">
+              <li className="flex items-center ">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/70">
+                  Tablet With Stand
+                </p>
+              </li>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+
+
+              <li className="flex items-center ">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/70">
+                  Tablet With Stand
+                </p>
+              </li>
+
+
+
+              <li className="flex items-center ">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/70">
+                  Tablet With Stand
+                </p>
+              </li>
+
+
+
+              <li className="flex items-center ">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/70">
+                  Tablet With Stand
+                </p>
+              </li>
+
+            </ul>
+
+            <span className="gap-2 my-2 flex flex-col px-20 justify-center items-center  text-red-600">
+              <p className="text-2xl text-white/80">249</p>
+              {/* <span className="w-3/4 bg-red-900 h-[1px] mx-auto"></span> */}
+              <p className="text-white/50 border-t-2 border-red-900 px-4">Learn More</p>
             </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+
+          </div>
+
+
+          <div className="rounded-lg p-10 bg-gradient-to-tr  from-white/5 via-gray-800 to-white/50"  >
+            <h3 className="text-2xl font-bold">Bundle 1</h3>
+            <p className="text-white/60">Al Essentails you needed to make a start </p>
+            <ul className="space-y-1">
+              <li className="flex items-center ">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/70">
+                  Tablet With Stand
+                </p>
+              </li>
+
+
+
+              <li className="flex items-center ">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/70">
+                  Tablet With Stand
+                </p>
+              </li>
+
+
+
+              <li className="flex items-center ">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/70">
+                  Tablet With Stand
+                </p>
+              </li>
+
+
+
+              <li className="flex items-center ">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/70">
+                  Tablet With Stand
+                </p>
+              </li>
+
+            </ul>
+
+            <span className="gap-2 my-2 flex flex-col px-20 justify-center items-center  text-red-600">
+              <p className="text-2xl text-white/80">249</p>
+              {/* <span className="w-3/4 bg-red-900 h-[1px] mx-auto"></span> */}
+              <p className="text-white/50 border-t-2 border-red-900 px-4">Learn More</p>
+            </span>
+          </div>
+
+
+          <div className="rounded-lg p-10 bg-gradient-to-tr  from-black/90 via-gray-800 to-white/50"  >
+            <h3 className="text-2xl font-bold">Bundle 1</h3>
+            <p className="text-white/60">Al Essentails you needed to make a start </p>
+            <ul className="space-y-1">
+              <li className="flex items-center ">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/70">
+                  Tablet With Stand
+                </p>
+              </li>
+
+
+
+              <li className="flex items-center ">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/70">
+                  Tablet With Stand
+                </p>
+              </li>
+
+
+
+              <li className="flex items-center ">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/70">
+                  Tablet With Stand
+                </p>
+              </li>
+
+
+
+              <li className="flex items-center ">
+                <MdArrowRight className="text-red-700 text-2xl font-bold" />
+                <p className="text-white/70">
+                  Tablet With Stand
+                </p>
+              </li>
+
+            </ul>
+
+
+            <span className="gap-2 my-2 flex flex-col px-20 justify-center items-center  text-red-600">
+              <p className="text-2xl text-white/80">249</p>
+              {/* <span className="w-3/4 bg-red-900 h-[1px] mx-auto"></span> */}
+              <p className="text-white/50 border-t-2 border-red-900 px-4">Learn More</p>
+            </span>
+
+          </div>
+        </section>
+
+
+        {/* Discover the setup */}
+        <section className="flex justify-center items-center">
+          <div className="space-y-5 text-center">
+
+            <h2 className="text-4xl font-bold text-white/70">Discover the Setup</h2>
+            <span className="flex justify-evenly gap-20">
+              <button className=" p-3 bg-gradient-to-t from-gray-800 to-gray-600  shadow-inner rounded-xl">Contactless Payment</button>
+              <button className=" p-3 bg-gradient-to-t from-gray-800 to-gray-600  shadow-inner rounded-xl">Cash Drawer</button>
+              <button className=" p-3 bg-gradient-to-t from-gray-800 to-gray-600  shadow-inner rounded-xl">Kitchen Display</button>
+              <button className=" p-3 bg-gradient-to-t from-gray-800 to-gray-600  shadow-inner rounded-xl">Thermal Printer</button>
+            </span>
+          </div>
+        </section>
+
+
+        {/* Enjoy Your Simple Payment Processing */}
+        <section className="text-center">
+          <div className="text-center space-y-5">
+
+            <h1 className="text-4xl font-bold text-white/70">Enjoy Your Simple Payment Processing </h1>
+            <p className="text-white/50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquid qui illo beatae natus alias tempore nostrum, nam tempora. </p>
+            <ul>
+
+              <li className="flex items-center justify-center">  <MdArrowRight className="text-red-700 text-2xl font-bold" /> Seamless Integration between your payment processor and point of sale</li>
+              <span className="flex justify-center items-center gap-10">
+
+                <li className="flex items-center justify-center"><MdArrowRight className="text-red-700 text-2xl font-bold" /> Mobile and COunter top options </li>
+                <li className="flex items-center justify-center"> <MdArrowRight className="text-red-700 text-2xl font-bold" />Easy to manage, blended rates</li>
+              </span>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
   );
 }
